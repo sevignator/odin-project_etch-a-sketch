@@ -1,0 +1,28 @@
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  box-sizing: border-box;
+  background-color: #111;
+}
+
+#grid {
+  display: grid;
+  align-items: stretch;
+  width: 720px;
+  height: 720px;
+}
+
+#grid>div {
+  background-color: #333;
+  border: solid 2px #111;
+  transition: all 1s ease;
+  cursor: pointer;
+}
+
+#grid>div.activated {
+  /* background-color: red; */
+}
